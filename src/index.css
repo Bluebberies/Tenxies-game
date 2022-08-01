@@ -1,13 +1,151 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background: #0B2434;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }
+
+main{
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+  border-radius: 10px; 
+}
+
+main.winPage{
+  width: 300px;
+}
+
+main button{
+  background: #5035FF;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 3.81277px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.384px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  width: 150px;
+  height: 35.84px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+main button:focus {
+  outline: none;
+}
+
+main button:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+main h1.title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25.6px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #2B283A; 
+}
+
+main p.instructions{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.1072px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #4A4E74; 
+  margin-top: -5px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 19px;
+}
+
+.dice {
+  position: relative;
+  margin: 8px;
+  width: 35.84px;
+  height: 35.84px;
+  line-height: 24px;
+  text-align: center;
+  color: #2B283A;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.dice .dot {
+  position: absolute;
+  background: #000;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  transform: translate(-8px, -8px);
+}
+
+.odd-1 {
+  top: 15%;
+  left: 69%;
+}
+
+.even-1,
+.odd-2 {
+  top: -5px;
+  left: 35%;
+}
+
+.even-2,
+.odd-3 {
+  top: 45%;
+  left: 100%;
+}
+
+.even-3,
+.odd-4 {
+  top: 45%;
+  left: 35%;
+}
+
+.even-4,
+.odd-5 {
+  top: -5px;
+  left: 100%;
+}
+
+.even-5 {
+  top: 12%;
+  left: 100%;
+}
+
+.even-6 {
+  top: 12%;
+  left: 35%;
+}
+
